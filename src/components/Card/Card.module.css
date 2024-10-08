@@ -1,0 +1,32 @@
+.card {
+    background-color: #fff;
+    padding: 12px 8px;
+    border-radius: 8px;
+    margin: 20px 0px;
+}
+
+.card_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 5px;
+    height: 26px;
+    background-color: #fff;
+    gap: 6px;
+    border: 1px solid #f1f1f1;
+}
+
+.card_circle {
+    background-color: #f1f1f1;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-items: start;
+    gap: 8px;
+}

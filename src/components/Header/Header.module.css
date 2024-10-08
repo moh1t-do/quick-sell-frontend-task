@@ -1,0 +1,77 @@
+/* Navigation Styles */
+nav {
+    background-color: #ffff;
+    padding: 12px 24px;
+    position: relative;
+}
+
+/* Button Styles */
+.btn {
+    padding: 4px 8px;
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    z-index: 1;
+    background-color: white;
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.dropdown_hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown_p {
+    padding: 12px 12px;
+    width: 300px;
+    top: 45px;
+}
+
+.dropdown_s {
+    z-index: 1;
+    top: 30px;
+    right: 0;
+    width: 100px;
+    cursor: pointer;
+}
+
+.dropdown_s div {
+    width: 100px;
+    padding: 4px 8px;
+}
+
+.dropdown_s div:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown_list {
+    display: flex;
+    position: relative;
+    margin: 8px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Arrow Icon Styles */
+.arrow_icon {
+    transition: transform 0.3s ease;
+}
+
+.arrow_icon_rotate {
+    transform: rotate(180deg);
+}
