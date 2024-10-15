@@ -5,6 +5,29 @@
     margin: 20px 0px;
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.header p {
+    margin: 0;
+    color: #6c757d;
+}
+
+.body {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.card_btn span{
+    color: #6c757d;
+}
+
 .card_btn {
     display: flex;
     justify-content: space-between;

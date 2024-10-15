@@ -32,14 +32,14 @@ function Header({ currentGroup, currentOrder, handleGroupChange, handleOrderChan
                 <li className={style.dropdown_list}>
                     <span>Grouping</span>
                     <button className={style.btn} onClick={handleDropdownClick(setHideGroupDropdown)}>
-                        <span>{currentGroup}</span>
+                        <span>{currentGroup.charAt(0).toUpperCase() + currentGroup.slice(1)}</span>
                         <img className={`${style.arrow_icon} ${hideGroupDropdown ? style.arrow_icon_rotate : ""}`} src='/icons/down.svg' alt='down' />
                     </button>
                     <ul className={`${style.dropdown} ${style.dropdown_s} ${hideGroupDropdown ? style.dropdown_hide : ""}`}>
                         {['status', 'user', 'priority'].map(value => (
                             <div key={value}>
                                 <li data-value={value} onClick={handleItemClick(handleGroupChange, setHideGroupDropdown)}>
-                                    {value}
+                                    {value.charAt(0).toUpperCase() + value.slice(1)}
                                 </li>
                             </div>
                         ))}
@@ -48,14 +48,14 @@ function Header({ currentGroup, currentOrder, handleGroupChange, handleOrderChan
                 <li className={style.dropdown_list}>
                     <span>Ordering</span>
                     <button className={style.btn} onClick={handleDropdownClick(setHideOrderDropdown)}>
-                        <span>{currentOrder}</span>
+                        <span>{currentOrder.charAt(0).toUpperCase() + currentOrder.slice(1)}</span>
                         <img className={`${style.arrow_icon} ${hideOrderDropdown ? style.arrow_icon_rotate : ""}`} src='/icons/down.svg' alt='down' />
                     </button>
                     <ul className={`${style.dropdown} ${style.dropdown_s} ${hideOrderDropdown ? style.dropdown_hide : ""}`}>
                         {['priority', 'title'].map(value => (
                             <div key={value}>
                                 <li data-value={value} onClick={handleItemClick(handleOrderChange, setHideOrderDropdown)}>
-                                    {value}
+                                    {value.charAt(0).toUpperCase() + value.slice(1)}
                                 </li>
                             </div>
                         ))}

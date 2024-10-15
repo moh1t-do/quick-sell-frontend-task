@@ -11,7 +11,7 @@ const data = {
     "p2": "Medium Priority",
     "3": "./icons/Img - High Priority.svg",
     "p3": "High Priority",
-    "4": "./icons/SVG - Urgent Priority grey.svg",
+    "4": "./icons/SVG - Urgent Priority colour.svg",
     "p4": "Urgent Priority",
 }
 
